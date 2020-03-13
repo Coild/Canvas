@@ -188,7 +188,7 @@ public class Signature extends AppCompatActivity {
 
                 mFileOutStream.flush();
                 mFileOutStream.close();
-                path_image = MediaStore.Images.Media.insertImage(getContentResolver(), mBitmap, "title", null);
+                path_image = MediaStore.Images.Media.insertImage(getContentResolver(), mBitmap, uniqueId, null);
                 Log.e("log_tag", "url: " + path_image);
                 //In case you want to delete the file
                 //boolean deleted = mypath.delete();
